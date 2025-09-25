@@ -1,0 +1,704 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    /* opacity: 0.8; */
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    background-color: #205b80;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 40px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.header ul {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    flex-wrap: wrap;
+
+}
+
+.header a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 10px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    z-index: 1;
+    flex-wrap: wrap;
+
+}
+
+.header a:hover {
+    color: white;
+    color: #000000;
+}
+
+
+.header a::after {
+    border-radius: 5px;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    top: 0;
+    left: 0;
+    background-color: #d1e0ea;
+    border: 2px solid black;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    z-index: -1;
+}
+
+.header a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.content {
+    position: absolute;
+    top: 45vh;
+    left: 30%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    flex-wrap: wrap;
+
+}
+
+.content button {
+    padding: 10px 20px;
+    font-size: 0.8em;
+    background-color: #205b80;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 1em;
+    flex-wrap: wrap;
+
+}
+
+.content button:hover {
+    background-color: #1a4a60;
+    color: #e0e0e0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.about {
+    position: absolute;
+    /* top: 60vh; */
+    left: 15%;
+    /* transform: translateX(-50%); */
+    text-align: left;
+    color: #000000;
+    font-size: 1.2em;
+    /* width: 50%; */
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: start;
+    /* margin-bottom: 5em; */
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #205b80;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 9em;
+    display: flex;
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+    flex-wrap: wrap;
+    color: rgb(16, 9, 42);
+    font-size: x-large;
+}
+
+.about .para1 {
+    flex-wrap: wrap;
+    color: rgb(50, 25, 146);
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+
+.about img {
+    width: 28%;
+    height: 40%;
+    margin-top: -19em;
+    margin-left: 40em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    border-radius: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.about img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.about button {
+    padding: 10px 20px;
+    font-size: 0.8em;
+    background-color: transparent;
+    color: #205b80;
+    border: 2px solid #205b80;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 1em;
+    margin-left: 13em;
+    flex-wrap: wrap;
+}
+
+.about button:hover {
+    background-color: #205b80;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#aboutus {
+    background-color: rgb(211, 216, 236);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.help {
+
+    margin-top: 30em;
+    text-align: center;
+    color: #000000;
+    font-size: 1.2em;
+    flex-wrap: wrap;
+    position: absolute;
+    text-align: left;
+    color: #000000;
+    justify-content: left;
+    align-items: start;
+    margin-bottom: 5rem;
+}
+
+.help h2 {
+    font-size: 2.5em;
+    color: #205b80;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 13em;
+    display: flex;
+}
+
+.help p {
+    line-height: 1.6;
+    text-align: right;
+    font-size: 1.1em;
+    color: #333;
+    flex-wrap: wrap;
+    color: rgb(16, 9, 42);
+    font-size: x-large;
+}
+
+.help button {
+    padding: 10px 20px;
+    font-size: 0.8em;
+    background-color: transparent;
+    color: #205b80;
+    border: 2px solid #205b80;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 1em;
+    margin-left: 19em;
+    flex-wrap: wrap;
+}
+
+.help button:hover {
+    background-color: #205b80;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    /* position: fixed; */
+    bottom: 0;
+    left: 1em;
+    margin-top: 65em;
+    width: 100%;
+    background-color: #205b80;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    flex-wrap: wrap;
+}
+
+.footer img {
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px;
+    margin-left: 2em;
+    flex-wrap: wrap;
+    display: inline-block;
+}
+
+.readMore {
+    text-align: center;
+    color: #000000;
+    font-size: 1.2em;
+    flex-wrap: wrap;
+    display: none;
+    margin-top: 5em;
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+.readMore h2 {
+    font-size: 2.5em;
+    color: #205b80;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.readMore p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+    flex-wrap: wrap;
+    color: rgb(16, 9, 42);
+    font-size: x-large;
+    text-align: left;
+
+}
+
+.contact {
+    /* position: absolute;
+    top: 80vh; */
+    display: none;
+    left: 15%;
+    text-align: left;
+    color: #000000;
+    font-size: 1.2em;
+    flex-wrap: wrap;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: #205b80;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 14em;
+    display: flex;
+}
+
+.contact p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+    flex-wrap: wrap;
+    color: rgb(16, 9, 42);
+    font-size: x-large;
+    text-align: center;
+}
+
+.contact form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact form button {
+
+    padding: 10px 20px;
+    font-size: 0.8em;
+    background-color: transparent;
+    color: #205b80;
+    border: 2px solid #205b80;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 1em;
+    margin-left: 19em;
+    flex-wrap: wrap;
+}
+
+.contact form button:hover {
+    background-color: #205b80;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contactSupport {
+    text-align: center;
+    color: #000000;
+    font-size: 1.2em;
+    flex-wrap: wrap;
+    display: none;
+    margin-top: 5em;
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+.contactSupport h2 {
+    font-size: 2.5em;
+    color: #205b80;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.faq {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+    flex-wrap: wrap;
+    color: rgb(16, 9, 42);
+    font-size: x-large;
+    text-align: left;
+    border: 2px solid #205b80;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.faq ul li {
+    list-style: disc;
+    margin-left: 2em;
+    margin-bottom: 0;
+}
+
+.que {
+    color: rgb(56, 56, 244);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.helpline {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+    flex-wrap: wrap;
+    color: rgb(16, 9, 42);
+    font-size: x-large;
+    text-align: left;
+    border: 2px solid #205b80;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.guide {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+    flex-wrap: wrap;
+    color: rgb(16, 9, 42);
+    font-size: x-large;
+    text-align: left;
+    border: 2px solid #205b80;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.guide ul li {
+    list-style: disc;
+    margin-left: 2em;
+}
+
+.ans {
+    display: none;
+}
+
+.login {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Position relative to the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the element */
+    z-index: 1001;
+    /* Make sure it's on top of the overlay */
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #000000;
+    background-color: #205b80;
+    font-size: 1.2em;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.login button {
+    padding: 10px 20px;
+    font-size: 0.8em;
+    background-color: transparent;
+    color: #fffefe;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 1em;
+    margin-left: 2em;
+    flex-wrap: wrap;
+}
+
+.login button:hover {
+    background-color: #99a4ab;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#patientLogin {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+#doctorLogin {
+    margin-right: 1em;
+}
+
+.cancle {
+    text-align: right;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Overlay for modal */
+.overlay {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black */
+    z-index: 1000;
+    /* Below the login modal, but above everything else */
+}
+
+/* Appoinment page  */
+.appoinment-container {
+    text-align: center;
+    color: #000000;
+    font-size: 1.2em;
+    flex-wrap: wrap;
+    margin: 0em;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.appoinment-container h2 {
+    font-size: 2.5em;
+    color: #205b80;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.appointmentForm {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.appointmentForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+
+}
+
+.appointmentForm input,
+.appointmentForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.appointmentForm button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #205b80;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.appointmentForm button:hover {
+    background-color: #1a4a60;
+    color: #e0e0e0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.appointmentForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 5%;
+}
+
+.doctor-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card h4 {
+    margin: 10px 0 5px;
+    color: #205b80;
+    font-size: 1.1rem;
+}
+
+.doctor-card p {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0;
+}
