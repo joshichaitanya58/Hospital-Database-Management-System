@@ -18,6 +18,40 @@ if ($conn->connect_error) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Data Management System</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+                body {
+            background-color: #f2f2f2;
+        }
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 5%;
+        }
+        .doctor-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .doctor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .doctor-card h4 {
+            margin: 10px 0 5px;
+            color: #205b80;
+            font-size: 1.1rem;
+        }
+        .doctor-card p {
+            color: #666;
+            font-size: 0.9em;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -193,5 +227,6 @@ if ($conn->connect_error) {
     </div>
     <script src="script.js"></script>
 </body>
+
 
 </html>
